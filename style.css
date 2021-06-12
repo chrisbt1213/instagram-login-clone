@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #FAFAFA;
+}
+
+.container {
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.logo{
+    width: 80%;
+    margin-bottom: 5px;
+}
+
+.inside-ctr{
+    background-color: white;
+    border: 1px solid rgba(151, 151, 151, 0.39);
+    border-radius: 1px;
+}
+
+.login-ctr{
+    width: 350px;
+    height: 380px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="email"], input[type="password"]{
+    width: 80%;
+    margin: 3px 10px;
+    padding: 10px;
+    background-color: #FAFAFA;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+}
+
+::placeholder{
+    color: rgba(131, 130, 130, 0.87);
+    font-size: 12px;
+}
+
+input[type="submit"]{
+    width: 80%;
+    padding: 7px;
+    margin-top: 9px;
+    margin-bottom: 15px;
+    background-color: #C0DFFD;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+h5{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+    color: rgb(136, 136, 136);
+    font-size: 13px;
+}
+
+h5:before,
+h5:after {
+    content: '';
+    border-top: 0.5px solid lightgray;
+    margin: 0 20px 0 0;
+    flex: 1 0 20px;
+}
+
+h5:after {
+    margin: 0 0 0 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+li > a {
+    text-decoration: none;
+    color: #385185;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+li::before{
+    background: left / contain url('fb-icon.png');
+    display: inline-block;
+    width: 18px; 
+    height: 18px;
+    content:"";
+    margin-right: 5px;
+}
+
+.login-ctr > a {
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #385185;
+}
+
+.new-acct-ctr {
+    width: 350px;
+    padding: 20px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    font-family: Arial;
+    font-size: 14px;
+}
+
+.new-acct-ctr > a {
+    text-decoration: none;
+    color: #0095F6;
+    margin-left: 3px;
+    font-weight: bold;
+}
+
+.main-ctr > p {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.stores-ctr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stores-ctr > img {
+    width: 140px;
+    margin-right: 8px;
+}
+
+.footer-ctr{
+    width: 90%;
+    margin-top: 160px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: grey;
+    font-size: 12px;
+}
+
+.footer-ctr > a {
+    display: inline-block;
+    margin-top: 5px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: grey;
+}
+
+.bottom-ctr{
+    display: flex;
+    margin-top: 15px;
+    color: grey;
+    font-size: 12px;
+}
+
+.select-lang {
+    background-color: #FAFAFA;
+    border: none;
+    color: grey;
+    margin-right: 15px;
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .content-ctr{
+        width: 750px;
+        height: 50%;
+        display: flex;
+        flex-direction: row;
+    }
+    .img-left{
+        width: 400px;
+        height: 558px;
+        background: center / 80% url('https://assets.codepen.io/6060109/IG-phone.jpeg');
+        background-repeat: no-repeat;
+    }
+}
+
